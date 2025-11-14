@@ -1,14 +1,19 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import catppuccin from "@catppuccin/starlight";
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://zenigata.github.io',
 	base: '/lfi-carquefou-2026',
+	i18n: {
+		locales: ["fr"],
+		defaultLocale: "fr",
+	},
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Carquefou 2026 🇫🇷',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
@@ -22,6 +27,12 @@ export default defineConfig({
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
+			],
+			plugins: [
+				catppuccin({
+					dark: { flavor: "macchiato", accent: "sky" },
+					light: { flavor: "latte", accent: "sky" },
+				})
 			],
 		}),
 	],

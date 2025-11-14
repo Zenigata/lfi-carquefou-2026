@@ -1,13 +1,13 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Carquefou 2026 🇫🇷
+description: Description
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Un programme de rupture pour mieux vivre à Carquefou.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
+    - text: En résumé
       link: /guides/example/
       icon: right-arrow
     - text: Read the Starlight docs
@@ -16,25 +16,30 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, Card, CardGrid } from "@astrojs/starlight/components";
 
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Commencer la révolution citoyenne" icon="pencil">
+    Edit `src/content/docs/index.mdx` to see this page change.
+  </Card>
+  <Card title="Commencer la planification écologique" icon="document">
+    Delete `template: splash` in `src/content/docs/index.mdx` to display a
+    sidebar on this page.
+  </Card>
+  <Card title="Fortifier l'entraide" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Construire la nouvelle France" icon="setting">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
+  <Card title="Dynamiser Carquefou" icon="open-book">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card>
+  <LinkCard
+    title="Commencer la révolution citoyenne"
+    href="/lfi-carquefou-2026/revolution-citoyenne/"
+    description="Configure Starlight to support multiple languages."
+  />
 </CardGrid>
