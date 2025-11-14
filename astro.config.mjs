@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://zenigata.github.io',
+	base: '/lfi-carquefou-2026',
 	integrations: [
 		starlight({
 			title: 'My Docs',
