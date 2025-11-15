@@ -29,9 +29,10 @@ export default defineConfig({
 					label: 'Révolution citoyenne',
 					autogenerate: { directory: 'revolution-citoyenne' },
 				},
+				{ slug: 'planification-ecologique' },
 				{
-					label: 'Révolution citoyenne',
-					autogenerate: { directory: 'revolution-citoyenne' },
+					label: 'Planification écologique',
+					autogenerate: { directory: 'planification-ecologique' },
 				},
 			],
 			plugins: [
