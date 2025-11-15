@@ -1,6 +1,6 @@
 ---
-title: Commencer la révolution citoyenne
-description: Commencer la révolution citoyenne
+title: Le programme en 3 minutes
+description: Le programme en 3 minutes
 ---
 
 La commune est l’échelon du pouvoir populaire en France.
@@ -26,27 +26,23 @@ Il ouvre le chemin pour la Constituante et la 6e République.
 - Instaurer un plafond aux indemnités de maire et de président·e d’Établissement public de coopération intercommunale (EPCI) : pas plus de trois fois le salaire de l’agent·e le moins payé à temps plein
 - Supprimer le recours aux voitures avec chauffeurs et aux voitures de fonction attribuées (remplacées par un parc commun pour la mairie) et instaurer la sobriété dans l’octroi d’avantages matériels aux élu·es (véhicules de fonction, etc.)
 
-import { LinkCard, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-<CardGrid>
-  <LinkCard
-    title="Partager le pouvoir des élu·es"
-    href="/lfi-carquefou-2026/revolution-citoyenne/pouvoir-elu-es"
-    description="Partager le pouvoir des élu·es"
-  />
-  <LinkCard
-    title="Favoriser l’intervention populaire active et permanente"
-    href="/lfi-carquefou-2026/revolution-citoyenne/intervention-populaire"
-    description="Favoriser l’intervention populaire active et permanente"
-  />
-  <LinkCard
-    title="Abolir les privilèges et la corruption"
-    href="/lfi-carquefou-2026/revolution-citoyenne/privileges-corruption"
-    description="Abolir les privilèges et la corruption"
-  />
-  <LinkCard
-    title="Affronter les politiques austéritaires et se libérer de la finance"
-    href="/lfi-carquefou-2026/revolution-citoyenne/politiques-austeritaires"
-    description="Affronter les politiques austéritaires et se libérer de la finance"
-  />
+<CardGrid stagger>
+  <Card title="Commencer la révolution citoyenne" icon="pencil">
+    Edit `src/content/docs/index.mdx` to see this page change.
+  </Card>
+  <Card title="Commencer la planification écologique" icon="document">
+    Delete `template: splash` in `src/content/docs/index.mdx` to display a
+    sidebar on this page.
+  </Card>
+  <Card title="Fortifier l'entraide" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Construire la nouvelle France" icon="setting">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
+  <Card title="Dynamiser Carquefou" icon="open-book">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card>
 </CardGrid>

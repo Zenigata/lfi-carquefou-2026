@@ -13,19 +13,25 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'Carquefou 2026 🇫🇷',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Carquefou 2026',
+			social: [
+				{ icon: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/carquefou_insoumis.es/' },
+				{ icon: 'telegram', label: 'Telegram', href: 'https://www.instagram.com/carquefou_insoumis.es/' },
+				{ icon: 'email', label: 'Email', href: 'mailto:contact@carquefou-insoumise.fr' }
+			],
+			logo: {
+				src: './src/assets/logo-strasbourg.png',
+			},
 			sidebar: [
+				{ slug: 'resume-synthetique' },
+				{ slug: 'revolution-citoyenne' },
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Révolution citoyenne',
+					autogenerate: { directory: 'revolution-citoyenne' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Révolution citoyenne',
+					autogenerate: { directory: 'revolution-citoyenne' },
 				},
 			],
 			plugins: [

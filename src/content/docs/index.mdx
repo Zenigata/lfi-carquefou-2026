@@ -3,43 +3,42 @@ title: Carquefou 2026 🇫🇷
 description: Description
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Un programme de rupture pour mieux vivre à Carquefou.
+  tagline: Un programme de rupture avec la France Insoumise.
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo-strasbourg.png
   actions:
-    - text: En résumé
-      link: /guides/example/
+    - text: Le résumé
+      link: /lfi-carquefou-2026/resume-synthetique
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Contactez-nous !
+      link: mailto:contact@carquefou-insoumise.fr
+      icon: email
       variant: minimal
 ---
 
 import { LinkCard, Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## Plongez dans nos 50 propositions :
 
-<CardGrid stagger>
-  <Card title="Commencer la révolution citoyenne" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
-  </Card>
-  <Card title="Commencer la planification écologique" icon="document">
-    Delete `template: splash` in `src/content/docs/index.mdx` to display a
-    sidebar on this page.
-  </Card>
-  <Card title="Fortifier l'entraide" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Construire la nouvelle France" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Dynamiser Carquefou" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
-  </Card>
+<CardGrid>
   <LinkCard
     title="Commencer la révolution citoyenne"
     href="/lfi-carquefou-2026/revolution-citoyenne/"
-    description="Configure Starlight to support multiple languages."
+    description="Plus de transparence et d'implication"
+  />
+  <LinkCard
+    title="Commencer la planification écologique"
+    href="/lfi-carquefou-2026/planification-ecologique/"
+    description="Commencer la planification écologique"
+  />
+  <LinkCard
+    title="Fortifier l’entraide"
+    href="/lfi-carquefou-2026/entraide/"
+    description="Fortifier l’entraide"
+  />
+  <LinkCard
+    title="Construire la Nouvelle France"
+    href="/lfi-carquefou-2026/nouvelle-france/"
+    description="Construire la Nouvelle France"
   />
 </CardGrid>
